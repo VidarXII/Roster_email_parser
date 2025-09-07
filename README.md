@@ -78,7 +78,7 @@ python extractor.py \
 
 The extracted Excel follows the template headers:
 
-Transaction Type (Add/Update/Term)	Transaction Attribute	Effective Date	Term Date	Term Reason	Provider Name	Provider NPI	Provider Specialty	State License	Organization Name	TIN	Group NPI	Complete Address	Phone Number	Fax Number	PPG ID	Line Of Business (Medicare/Commercial/Medical)
+| Transaction Type (Add/Update/Term) | Transaction Attribute | Effective Date | Term Date | Term Reason | Provider Name | Provider NPI | Provider Specialty | State License | Organization Name | TIN | Group NPI | Complete Address | Phone Number | Fax Number | PPG ID | Line Of Business (Medicare/Commercial/Medical) |
 
 Missing fields will be filled with:
 
@@ -108,7 +108,10 @@ Term reason: Retired. Group NPI: 9876543210.
 
 Output row in Excel:
 
-Term | Provider | 09/01/2024 | 09/01/2024 | Retired | John Smith | 1234567890 | Information not found | Information not found | Information not found | Information not found | 9876543210 | Information not found | Information not found | Information not found | Information not found | Information not found
+| Transaction Type (Add/Update/Term) | Transaction Attribute | Effective Date | Term Date | Term Reason | Provider Name | Provider NPI | Provider Specialty | State License | Organization Name | TIN | Group NPI | Complete Address | Phone Number | Fax Number | PPG ID | Line Of Business (Medicare/Commercial/Medical) |
+|-----------------------------------|------------------------|----------------|-----------|-------------|---------------|--------------|-------------------|---------------|-------------------|-----|-----------|------------------|--------------|-------------|--------|-------------------------------------------------|
+| Term                              | Provider              | 09/01/2024     | 09/01/2024| Retired     | John Smith    | 1234567890   | Information not found | Information not found | Information not found | Information not found | 9876543210 | Information not found | Information not found | Information not found | Information not found | Information not found |
+
 
 ⚠️ Notes
 
