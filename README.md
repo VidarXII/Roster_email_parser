@@ -79,6 +79,7 @@ python extractor.py \
 The extracted Excel follows the template headers:
 
 | Transaction Type (Add/Update/Term) | Transaction Attribute | Effective Date | Term Date | Term Reason | Provider Name | Provider NPI | Provider Specialty | State License | Organization Name | TIN | Group NPI | Complete Address | Phone Number | Fax Number | PPG ID | Line Of Business (Medicare/Commercial/Medical) |
+|----------------------------------------|---------------------------|--------------------|---------------|-----------------|-------------------|------------------|------------------------|-------------------|-----------------------|---------|---------------|----------------------|------------------|----------------|------------|---------------------------------------------------|
 
 Missing fields will be filled with:
 
