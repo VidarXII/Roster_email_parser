@@ -1,6 +1,6 @@
 # 📧 Roster Email → Structured Excel Extractor
 
-🔗 **Repository:** [github.com/your-username/roster-email-extractor](https://github.com/your-username/roster-email-extractor)
+🔗 **Repository:** [https://github.com/VidarXII/Roster_email_parser.git](https://github.com/VidarXII/Roster_email_parser.git)
 
 ## Roster_email_parser
 This project is a solution for the *HiLabs Hackathon 2025* roster parsing challenge.  
