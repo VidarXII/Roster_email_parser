@@ -36,13 +36,13 @@ Verbose logging with --verbose option.
 
 
 ## 📂 Project Structure
-
+```bash
 .
 ├── extractor.py        # Main script
 ├── requirements.txt    # Dependencies
 ├── README.md           # Project documentation
 └── /samples            # Example .eml files (optional)
-
+```
 ## 🛠️ Requirements
 
 Python 3.9+
