@@ -59,14 +59,14 @@ pip install -r requirements.txt
 ```
 
 ### Contents of requirements.txt:
-
+```bash
 transformers
 torch
 openpyxl
 beautifulsoup4
 lxml
 pandas
-
+```
 ## ⚡ Usage
 1. Single .eml file
   ```bash
