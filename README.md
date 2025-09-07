@@ -1,7 +1,8 @@
+# 📧 Roster Email → Structured Excel Extractor
+
+🔗 **Repository:** [github.com/your-username/roster-email-extractor](https://github.com/your-username/roster-email-extractor)
+
 ## Roster_email_parser
-
-## 📧 Roster Email → Structured Excel Extractor
-
 This project is a solution for the *HiLabs Hackathon 2025* roster parsing challenge.  
 
 It automates the process of parsing .eml emails (provider roster updates) and extracting structured information into a standardized Excel template using an LLM (Large Language Model).
