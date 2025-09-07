@@ -2,7 +2,9 @@
 
 ## 📧 Roster Email → Structured Excel Extractor
 
-This project automates the process of parsing .eml emails (provider roster updates) and extracting structured information into a standardized Excel template using an LLM (Large Language Model).
+This project is a solution for the *HiLabs Hackathon 2025* roster parsing challenge.  
+
+It automates the process of parsing .eml emails (provider roster updates) and extracting structured information into a standardized Excel template using an LLM (Large Language Model).
 
 It is designed for healthcare roster management hackathons where you receive unstructured email updates about providers and must normalize them into a fixed schema.
 
