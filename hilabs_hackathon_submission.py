@@ -252,5 +252,12 @@ def main():
     print(f"🎉 Done! Output saved at: {out_path.resolve()}")
 
 if __name__ == "__main__":
-    main()
+    eml_path = "/content/drive/MyDrive/Hilabs/Sample-2.eml"              # input
+    template_path = "/content/drive/MyDrive/Hilabs/Sample-2_Output.xlsx"   # hackathon template
+    out_path = "Extracted.xlsx"
+
+    # text = load_eml(eml_path)
+    pipe = get_llm_pipe(MODEL_NAME)
+    process_eml_files([eml_path], template_path, out_path, pipe)
+    print("✅ Extraction complete:", out_path)
 
