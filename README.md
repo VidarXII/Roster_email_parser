@@ -21,6 +21,7 @@ Exports structured results directly into a provided Excel template.
 Supports both single file and batch processing.
 
 📂 Project Structure
+
 .
 ├── extractor.py        # Main script
 ├── requirements.txt    # Dependencies
