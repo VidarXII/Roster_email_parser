@@ -1,12 +1,12 @@
-# Roster_email_parser
+## Roster_email_parser
 
-📧 Roster Email → Structured Excel Extractor
+## 📧 Roster Email → Structured Excel Extractor
 
 This project automates the process of parsing .eml emails (provider roster updates) and extracting structured information into a standardized Excel template using an LLM (Large Language Model).
 
 It is designed for healthcare roster management hackathons where you receive unstructured email updates about providers and must normalize them into a fixed schema.
 
-🚀 Features
+## 🚀 Features
 
 Extracts provider and transaction details (add/update/term, NPIs, TINs, specialties, addresses, etc.) from unstructured roster emails.
 
@@ -20,7 +20,7 @@ Exports structured results directly into a provided Excel template.
 
 Supports both single file and batch processing.
 
-📂 Project Structure
+## 📂 Project Structure
 
 .
 ├── extractor.py        # Main script
@@ -28,7 +28,7 @@ Supports both single file and batch processing.
 ├── README.md           # Project documentation
 └── /samples            # Example .eml files (optional)
 
-🛠️ Requirements
+## 🛠️ Requirements
 
 Python 3.9+
 
@@ -46,7 +46,7 @@ Install dependencies:
 pip install -r requirements.txt
 
 
-Contents of requirements.txt:
+### Contents of requirements.txt:
 
 transformers
 torch
@@ -55,7 +55,7 @@ beautifulsoup4
 lxml
 pandas
 
-⚡ Usage
+## ⚡ Usage
 1. Single .eml file
 python extractor.py \
     /path/to/email.eml \
@@ -74,7 +74,7 @@ python extractor.py \
 
 -v enables verbose logging.
 
-📑 Output Format
+## 📑 Output Format
 
 The extracted Excel follows the template headers:
 
@@ -85,7 +85,7 @@ Missing fields will be filled with:
 
 "Information not found"
 
-🧠 How It Works
+## 🧠 How It Works
 
 Parse Email
 Extracts plain text + cleaned HTML text from .eml using email and BeautifulSoup.
@@ -99,7 +99,7 @@ Phi-3-mini is used to generate structured JSON output.
 Excel Mapping
 JSON keys are mapped to template headers and appended row-wise.
 
-🔍 Example
+## 🔍 Example
 
 Input email snippet:
 
@@ -114,7 +114,7 @@ Output row in Excel:
 | Term                              | Provider              | 09/01/2024     | 09/01/2024| Retired     | John Smith    | 1234567890   | Information not found | Information not found | Information not found | Information not found | 9876543210 | Information not found | Information not found | Information not found | Information not found | Information not found |
 
 
-⚠️ Notes
+## ⚠️ Notes
 
 Ensure your Excel template has correct headers (they map directly to JSON keys).
 
@@ -122,6 +122,6 @@ LLM performance may vary; post-processing fills missing values with "Information
 
 For hackathon speed: run on GPU if available, otherwise CPU works (slower).
 
-📜 License
+## 📜 License
 
 MIT License – free to use, modify, and distribute.
