@@ -8,17 +8,29 @@ It is designed for healthcare roster management hackathons where you receive uns
 
 ## 🚀 Features
 
-Extracts provider and transaction details (add/update/term, NPIs, TINs, specialties, addresses, etc.) from unstructured roster emails.
-
 Uses Microsoft Phi-3-mini-4k-instruct for fast, small-footprint LLM extraction.
 
 Handles plain-text and HTML emails.
 
-Normalizes missing data to "Information not found".
+Supports both single file and batch processing.
+
+Supports *single .eml file* or an *entire folder of .eml files*. 
+
+Extracts provider details such as:
+  - Transaction Type, Effective/Term Dates, Term Reason  
+  - Provider Name, NPI, Specialty, License, Organization  
+  - TIN, Group NPI, Address, Phone, Fax  
+  - PPG ID, Line of Business
+ 
+If a field is missing → "Information not found" is inserted.  
 
 Exports structured results directly into a provided Excel template.
 
-Supports both single file and batch processing.
+Batch processing with --batch option.  
+
+Verbose logging with --verbose option.  
+
+
 
 ## 📂 Project Structure
 
