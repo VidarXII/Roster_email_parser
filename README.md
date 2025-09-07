@@ -41,7 +41,7 @@ openpyxl for Excel manipulation
 
 beautifulsoup4 + lxml for HTML email parsing
 
-Install dependencies:
+### Install dependencies:
 
 pip install -r requirements.txt
 
@@ -57,13 +57,13 @@ pandas
 
 ## ⚡ Usage
 1. Single .eml file
-python extractor.py \
+    python extractor.py \
     /path/to/email.eml \
     /path/to/template.xlsx \
     /path/to/output.xlsx
 
 2. Folder of .eml files
-python extractor.py \
+    python extractor.py \
     /path/to/email/folder \
     /path/to/template.xlsx \
     /path/to/output.xlsx \
