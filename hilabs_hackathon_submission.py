@@ -1,7 +1,6 @@
 import os
 import sys
 import email
-import pandas as pd
 from email import policy
 import json
 from pathlib import Path
@@ -142,7 +141,7 @@ TEMPLATE_TO_KEY = {
 def append_row_to_template(template_path: Path, out_path: Path, row_values: List[Any]) -> None:
     wb = openpyxl.load_workbook(template_path)
     ws = wb.active
-    ws.delete_rows(0)
+    ws.delete_rows(2, ws.max_row)
     ws.append(row_values)
     wb.save(out_path)
 
@@ -185,7 +184,6 @@ def process_eml_files(eml_paths: List[Path], template_path: Path, out_path: Path
         append_row_to_template(template_path, out_path, row)
         print(f"Processed: {eml_path}")
 
-# ---- Main
 # ---- Main
 def main():
     import argparse
@@ -253,4 +251,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
