@@ -38,7 +38,7 @@ Verbose logging with --verbose option.
 ## 📂 Project Structure
 ```bash
 .
-├── extractor.py        # Main script
+├── hilabs_hackathon_submission.py        # Main script
 ├── requirements.txt    # Dependencies
 ├── README.md           # Project documentation
 └── /samples            # Example .eml files (optional)
@@ -74,7 +74,7 @@ pandas
 1. Single .eml file
   ```bash
 
-    python extractor.py \
+    python hilabs_hackathon_submission.py \
     /path/to/email.eml \
     /path/to/template.xlsx \
     /path/to/output.xlsx
@@ -83,7 +83,7 @@ pandas
  2. Folder of .eml files
     ```bash
 
-    python extractor.py \
+    python hilabs_hackathon_submission.py \
     /path/to/email/folder \
     /path/to/template.xlsx \
     /path/to/output.xlsx \
